@@ -82,6 +82,7 @@ body {
   .container {
     flex-direction: column-reverse;
     text-align: center;
+    height: 100vh;
   }
 
   .content-text,
