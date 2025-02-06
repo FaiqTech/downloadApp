@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  background: linear-gradient(135deg, #82994c, #5a67d8);
+  background: linear-gradient(135deg, #6a85b6, #bac8e0);
   width: 100%;
   height: 100vh;
   display: flex;
@@ -29,8 +29,8 @@ body {
 }
 
 .logo {
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: 150px;
 
   margin-bottom: 20px;
 }
@@ -80,7 +80,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
   }
 
