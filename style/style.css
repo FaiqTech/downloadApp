@@ -69,8 +69,8 @@ body {
   background-color: #6a85b6;
   color: white;
   font-size: 1.1rem;
-  padding: 8px 10px;
-  border: 5px #fff solid;
+  padding: 8px 20px;
+  border: 5px solid #fff;
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
@@ -126,62 +126,63 @@ body {
   width: 80%;
   max-width: 400px;
   position: relative;
+}
 
-  .popup-content button.close-popup {
-    background-color: transparent;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    color: #333;
+.popup-content button.close-popup {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #333;
+}
+
+.popup-content h2 {
+  margin-bottom: 10px;
+}
+
+.popup-content p {
+  margin-bottom: 20px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse;
+    text-align: center;
+    height: 100vh;
   }
 
-  .popup-content h2 {
-    margin-bottom: 10px;
+  .content-text,
+  .content-img {
+    width: 100%;
   }
 
-  .popup-content p {
-    margin-bottom: 20px;
+  .content-text h1 {
+    font-size: 2rem;
   }
 
-  @media screen and (max-width: 768px) {
-    .container {
-      flex-direction: column-reverse;
-      text-align: center;
-      height: 100vh;
-    }
-
-    .content-text,
-    .content-img {
-      width: 100%;
-    }
-
-    .content-text h1 {
-      font-size: 2rem;
-    }
-
-    .content-text p {
-      font-size: 0.9rem;
-    }
-
-    .content-img img {
-      width: 90%;
-    }
+  .content-text p {
+    font-size: 0.9rem;
   }
 
-  @media screen and (max-width: 480px) {
-    .content-text h1 {
-      font-size: 1.8rem;
-    }
+  .content-img img {
+    width: 90%;
+  }
+}
 
-    .content-text p {
-      font-size: 0.85rem;
-    }
+@media screen and (max-width: 480px) {
+  .content-text h1 {
+    font-size: 1.8rem;
+  }
 
-    .btn-container a img {
-      width: 130px;
-    }
+  .content-text p {
+    font-size: 0.85rem;
+  }
+
+  .btn-container a img {
+    width: 130px;
   }
 }
