@@ -147,7 +147,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* Responsive styles */
 @media screen and (max-width: 768px) {
   .container {
     flex-direction: column-reverse;
